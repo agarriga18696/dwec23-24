@@ -1,0 +1,12 @@
+/* variables */
+:root {
+
+    /* color palette */
+    --primary-color: #f0f3f2; /* f0f3f2 */ /* f6f7f4 */
+    --secondary-color: #be9b73; /* be9b73 */ /* 2d3a40 */
+    --emphasys-color: #4f586c; /* 4f586c */ /* 2d9283 */
+
+    /* document width */
+    --doc-width: 70vw;
+
+}
