@@ -1,0 +1,198 @@
+/* header */
+.header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: var(--doc-width);
+    height: 8rem;
+    padding: 2rem 0;
+    background-color: var(--primary-color);
+    /* transition for theme color */
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;        
+}
+
+/* main menu */
+.main-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    height: 100%;
+    font-family: var(--primary-font);
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    /* transition for theme color */
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;        
+}
+
+.align-right {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.align-right > span {
+    padding-right: 1rem;
+}
+
+.align-right > i {
+    position: absolute;
+    right: .5rem;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.main-menu__link {
+    /* transition for theme color */
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;        
+}
+
+.main-menu__link:nth-of-type(1) {
+    padding-left: 4rem;
+}
+
+.main-menu__link:hover {
+    color: var(--emphasys-color);
+}
+
+#header__title {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: var(--emphasys-color);
+    font-size: 2em;
+    font-family: var(--secondary-font);
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* responsive menu */
+.menu-button {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: none;
+    border: none;
+    z-index: 1;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.menu-button__icon {
+    display: none;
+    visibility: hidden;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.7rem;
+    z-index: 1;
+    cursor: default;
+    color: var(--emphasys-color);
+}
+
+.fa-solid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    /* transition for theme color */
+    transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;        
+}
+
+.fa-bars-staggered {
+    opacity: 0;
+}
+
+.header:has(.menu-button:checked) .main-menu {
+    right: 0vw;
+}
+
+.menu-button:checked~.menu-button__icon>.fa-bars-staggered {
+    opacity: 1;
+}
+
+.menu-button:checked~.menu-button__icon>.fa-bars {
+    opacity: 0;
+}
+
+/* theme selector */
+.theme-selector {
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    display: none;
+    z-index: 1;
+}
+
+.light-theme {
+    opacity: 0;
+}
+
+*:has(.theme-selector:checked) {
+    --primary-color: #222738;
+    --emphasys-color: #f6f3ec;
+}
+
+.theme-selector:checked ~ .dark-theme {
+    opacity: 0;
+}
+
+.theme-selector:checked ~ .light-theme {
+    opacity: 1;
+}
+
+

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css links -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-content.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/media-queries-responsive.css">
@@ -17,6 +20,7 @@
 
 <body>
     <main class="main-container">
+        <div class="top-space" id="top"></div>
         <!-- main header -->
         <div class="header">
             <a href="#" id="header__title">DWEC</a>
@@ -25,22 +29,18 @@
                 <a href="#titulo_1" class="main-menu__link">Artículo 1</a>
                 <a href="#titulo_2" class="main-menu__link">Artículo 2</a>
                 <a href="#titulo_3" class="main-menu__link">Artículo 3</a>
-                <a href="#" class="main-menu__link align-right">Contacto</a>
+                <label class="align-right">
+                    <input type="checkbox" class="main-menu__link theme-selector">
+                    <i class="fa-solid fa-lightbulb dark-theme"></i>
+                    <i class="fa-regular fa-lightbulb light-theme"></i>
+                </label>
             </nav>
-            <!-- responsive menu -->
+            <!-- responsive menu button -->
             <input type="checkbox" class="menu-button" id="menu-btn" hidden>
             <label for="menu-btn" class="menu-button__icon">
                 <i class="fa-solid fa-bars"></i>
                 <i class="fa-solid fa-bars-staggered"></i>
             </label>
-            <div class="responsive-menu">
-                <nav class="aside-menu">
-                    <a href="#titulo_1" class="aside-menu__link aside-item">Artículo 1</a>
-                    <a href="#titulo_2" class="aside-menu__link aside-item">Artículo 2</a>
-                    <a href="#titulo_3" class="aside-menu__link aside-item">Artículo 3</a>
-                    <a href="#" class="aside-menu__link aside-item">Contacto</a>
-                </nav>
-            </div>
         </div>
 
         <section class="container">
@@ -99,7 +99,7 @@
                 <article class="article-box">
                     <h1 id="titulo_2" class="article-box__title">Artículo II</h1>
                     <div class="article-box__content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat reprehenderit doloremque
+                        <p>Fugiat reprehenderit doloremque
                             consequatur ratione suscipit, nesciunt autem dignissimos dicta esse, eum itaque cumque
                             molestias molestiae provident natus laudantium, qui numquam asperiores! Nihil officiis
                             maiores, consequuntur harum laudantium, ea velit distinctio perferendis, optio quam sed ut
@@ -140,7 +140,7 @@
                 <article class="article-box">
                     <h1 id="titulo_3" class="article-box__title">Artículo III</h1>
                     <div class="article-box__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam animi dolorum temporibus est,
+                        <p>Nam animi dolorum temporibus est,
                             porro atque corporis rerum dignissimos esse id nostrum excepturi praesentium, officiis ipsa
                             quidem dolores consectetur maxime fuga, doloremque quibusdam enim culpa! Eos quibusdam
                             quaerat maiores neque accusantium sit sunt, facilis consequuntur ducimus eligendi eaque
@@ -171,12 +171,44 @@
                 </article>
 
             </div>
-
+            
+            <!-- go to top button -->
+            <a href="#top" class="totop-btn">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+            
             <!-- footer -->
             <footer class="footer">
-                <section class="footer__section">
-                    <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>
-                    <a href="mailto:agarriga18696@iesjoanramis.org">agarriga18696@iesjoanramis.org</a>
+                <section class="footer-section">
+                    <!-- footer column -->
+                    <div class="footer-section-column">
+                        <div class="footer-section-row">
+                            <h4 class="footer-section-row__title">Web desarrollada por</h4>
+                            <div class="footer-section-row__content">
+                                <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>    
+                            </div>
+                        </div>
+                        <div class="footer-section-row">
+                            <h4 class="footer-section-row__title">Contacto</h4>
+                            <div class="footer-section-row__content">
+                                <a href="mailto:agarriga18696@iesjoanramis.org">agarriga18696@iesjoanramis.org</a>        
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer column -->
+                    <div class="footer-section__column">
+                        <div class="footer-section-row">
+                            <h4 class="footer-section-row__title">Recursos</h4>
+                            <div class="footer-section-row__content">
+                                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
+                                <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
+                                <a href="https://huemint.com/" target="_blank">Huemint</a>
+                                <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                                <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                                <a href="https://autoprefixer.github.io/" target="_blank">Autoprefixer CSS</a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </footer>
 
