@@ -1,6 +1,66 @@
 /* smartphones */
-@media only screen and (max-width: 1200px) {
+@media only screen and (width <= 1200px) {
 
-        
+    .main-container {
+        --doc-width: 80vw;
+    }
+
+}
+
+@media only screen and (width <= 768px) {
+
+    .main-container {
+        --doc-width: 90vw;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .responsive-menu {
+        display: flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+    
+    }
+
+}
+
+@media (width <= 768px) {
+
+    body {
+        font-size: 110%;
+    }
+
+    .main-container {
+        --doc-width: 100vw;
+    }
+
+    .menu-button {
+        display: flex;
+        visibility: visible;
+    }
+
+    .menu-button__icon {
+        display: flex;
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .main-section {
+        width: 90vw;
+    }
+
+    .footer__section {
+        width: 90vw;
+    }
+
+    .article-box__title {
+        font-size: 1.45em;
+    }
+
+    .article-box__content>p {
+        line-height: 1.85rem;
+    }
 
 }
