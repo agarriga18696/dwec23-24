@@ -2,9 +2,11 @@
 :root {
 
     /* color palette */
-    --primary-color: #f6f3ec; /* f0f3f2 */ /* f6f7f4 */
-    --secondary-color: #a45c6a; /* be9b73 */ /* 2d3a40 */
-    --emphasys-color: #222738; /* 4f586c */ /* 2d9283 */
+    --primary-color: hsl(36, 13%, 92%); /* f0f3f2 */ /* f6f7f4 */
+    --secondary-color: hsl(30, 40%, 49%); /* be9b73 */ /* 2d3a40 */
+    --emphasys-color: hsl(25, 8%, 16%); /* 4f586c */ /* 2d9283 */
+    --primary-color-transparent: hsla(36, 13%, 92%, 30%);
+    --emphasys-color-transparent: hsla(25, 8%, 16%, 30%);
 
     /* document width */
     --doc-width: 50vw;

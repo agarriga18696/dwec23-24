@@ -9,10 +9,12 @@
     -ms-flex-line-pack: center;
     align-content: center;
     width: 100%;
+    margin-top: 4rem;
     padding: 1.25rem 0;
+    border-top: .5rem var(--primary-color);
+    border-top-style: dashed;
     background-color: var(--secondary-color);
     /* transition for theme color */
-    transition: .2s ease-in-out;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;        
@@ -46,9 +48,17 @@
     gap: 1rem;
 }
 
+.footer-section-row__content > a span {
+    width: fit-content;
+}
+
+.footer-section-row__content >* i {
+    font-size: 1.6em;
+}
+
 .footer-section-row__title {
     padding-bottom: 1rem;
     font-family: var(--secondary-font);
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: var(--primary-color);
 }

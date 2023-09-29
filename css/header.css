@@ -20,7 +20,6 @@
     padding: 2rem 0;
     background-color: var(--primary-color);
     /* transition for theme color */
-    transition: .2s ease-in-out;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;        
@@ -46,7 +45,6 @@
     text-transform: uppercase;
     color: var(--secondary-color);
     /* transition for theme color */
-    transition: .2s ease-in-out;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;        
@@ -60,19 +58,28 @@
 }
 
 .align-right > span {
-    padding-right: 1rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
 }
 
-.align-right > i {
+.align-right > span > i {
     position: absolute;
-    right: .5rem;
     font-size: 2em;
     cursor: pointer;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;        
+}
+
+.align-right > span > i:hover {
+    transform: rotate(360deg);
 }
 
 .main-menu__link {
     /* transition for theme color */
-    transition: .2s ease-in-out;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;        
@@ -141,13 +148,12 @@
     color: var(--emphasys-color);
 }
 
-.fa-solid {
+.menu-button__icon > i {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
     /* transition for theme color */
-    transition: .2s ease-in-out;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;        
@@ -155,44 +161,27 @@
 
 .fa-bars-staggered {
     opacity: 0;
+    visibility: hidden;
 }
 
 .header:has(.menu-button:checked) .main-menu {
     right: 0vw;
 }
 
+*:has(.menu-button:checked) .totop-btn {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .menu-button:checked~.menu-button__icon>.fa-bars-staggered {
     opacity: 1;
+    visibility: visible;
 }
 
 .menu-button:checked~.menu-button__icon>.fa-bars {
     opacity: 0;
+    visibility: hidden;
 }
 
-/* theme selector */
-.theme-selector {
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    display: none;
-    z-index: 1;
-}
-
-.light-theme {
-    opacity: 0;
-}
-
-*:has(.theme-selector:checked) {
-    --primary-color: #222738;
-    --emphasys-color: #f6f3ec;
-}
-
-.theme-selector:checked ~ .dark-theme {
-    opacity: 0;
-}
-
-.theme-selector:checked ~ .light-theme {
-    opacity: 1;
-}
 
 

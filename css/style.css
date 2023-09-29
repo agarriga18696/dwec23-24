@@ -25,7 +25,6 @@ body {
     scroll-behavior: smooth;
     scroll-padding-top: 8rem;
     /* transition for theme color */
-    transition: .2s ease-in-out;
     -webkit-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;        
@@ -54,9 +53,9 @@ body {
     right: 1.25rem;
     opacity: .25;
     border-radius: .25rem;
-    -webkit-transition: .15s ease-out;
-    -o-transition: .15s ease-out;
-    transition: .15s ease-out;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .totop-btn:hover {
@@ -64,13 +63,46 @@ body {
 }
 
 .totop-btn > i {
-    -webkit-transition: .1s ease-out;
-    -o-transition: .1s ease-out;
-    transition: .1s ease-out;
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .totop-btn:focus>i {
     -webkit-transform: translateY(-20%);
     -ms-transform: translateY(-20%);
     transform: translateY(-20%);
+}
+
+/* theme selector */
+.theme-selector {
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    z-index: 1;
+}
+
+.light-theme {
+    opacity: 0;
+    visibility: hidden;
+}
+
+*:has(.theme-selector:checked) {
+    --primary-color: hsl(25, 8%, 16%);
+    --emphasys-color: hsl(36, 13%, 92%);
+    --primary-color-transparent: hsla(25, 8%, 16%, 70%);
+    --emphasys-color-transparent: hsla(36, 13%, 92%, 70%);
+}
+
+.theme-selector:checked ~* .dark-theme {
+    opacity: 0;
+    transition-delay: .2s;
+}
+
+.theme-selector:checked ~* .light-theme {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: .2s;
 }
