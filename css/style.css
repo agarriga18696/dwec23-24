@@ -49,8 +49,8 @@ body {
     height: 2.5rem;
     background-color: var(--emphasys-color);
     color: var(--primary-color);
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: 2rem;
+    right: 2rem;
     opacity: .25;
     border-radius: .25rem;
     -webkit-transition: .2s ease-in-out;
@@ -105,4 +105,9 @@ body {
     opacity: 1;
     visibility: visible;
     transition-delay: .2s;
+}
+
+span {
+    display: flex;
+    margin-top: .105rem;
 }

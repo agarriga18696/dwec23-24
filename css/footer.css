@@ -53,12 +53,12 @@
 }
 
 .footer-section-row__content >* i {
-    font-size: 1.6em;
+    font-size: 1.5em;
 }
 
 .footer-section-row__title {
     padding-bottom: 1rem;
     font-family: var(--secondary-font);
-    font-size: 1.05rem;
+    font-size: 1.4em;
     color: var(--primary-color);
 }

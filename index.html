@@ -23,20 +23,23 @@
         <div class="top-space" id="top"></div>
         <!-- main header -->
         <div class="header">
-            <a href="#" id="header__title">DWEC</a>
+            <a href="#" id="header__title">
+                <span><i class="fa-solid fa-dragon"></i></span>
+                WEC
+            </a>
             <!-- main menu -->
             <nav class="main-menu">
                 <a href="#titulo_1" class="main-menu__link">Artículo 1</a>
                 <a href="#titulo_2" class="main-menu__link">Artículo 2</a>
                 <a href="#titulo_3" class="main-menu__link">Artículo 3</a>
                 <!-- theme button -->
-                <label class="align-right">
-                    <input type="checkbox" class="main-menu__link theme-selector">
-                    <span>
+                <div class="align-right">
+                    <input type="checkbox" class="main-menu__link theme-selector" id="theme-btn">
+                    <label for="theme-btn">
                         <i class="fa-solid fa-moon dark-theme"></i>
                         <i class="fa-regular fa-sun light-theme"></i>
-                    </span>
-                </label>
+                    </label>
+                </div>
             </nav>
             <!-- responsive menu button -->
             <input type="checkbox" class="menu-button" id="menu-btn" hidden>

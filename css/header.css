@@ -57,7 +57,7 @@
     align-items: center;
 }
 
-.align-right > span {
+.align-right > label {
     position: relative;
     display: flex;
     justify-content: center;
@@ -65,7 +65,7 @@
     width: fit-content;
 }
 
-.align-right > span > i {
+.align-right > label > i {
     position: absolute;
     font-size: 2em;
     cursor: pointer;
@@ -74,7 +74,7 @@
     transition: .5s ease-in-out;        
 }
 
-.align-right > span > i:hover {
+.align-right > label > i:hover {
     transform: rotate(360deg);
 }
 
@@ -95,6 +95,7 @@
 
 #header__title {
     position: relative;
+    display: flex;
     top: 0;
     left: 0;
     color: var(--emphasys-color);

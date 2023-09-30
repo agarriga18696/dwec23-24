@@ -81,7 +81,7 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     margin-right: .2rem;
-    font-size: 4em;
+    font-size: 3.5em;
     font-family: var(--decorative-font);
     color: var(--secondary-color);
 }

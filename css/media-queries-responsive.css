@@ -39,7 +39,7 @@
         backdrop-filter: blur(1rem);
     }
 
-    .main-menu__link, .main-menu > label > span {
+    .main-menu__link, .main-menu >* {
         color: var(--emphasys-color);
     }
 
@@ -102,4 +102,26 @@
         padding: 2rem;
     }
 
+    .totop-btn {
+        align-self: center;
+    }
+
+}
+
+@media (width <= 430px) {
+
+    .footer-section-row__title {
+        font-size: 1.2em;
+    }
+
+    .footer-section-row__content {
+        font-size: .85em;
+    }
+}
+
+@media (width <= 360px) {
+
+    * {
+        font-size: 96%;
+    }
 }
