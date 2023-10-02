@@ -1,256 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Andreu Garriga</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- css links -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/media-queries-responsive.css">
-    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/media-queries-responsive.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <main class="main-container">
-        <div class="top-space" id="top"></div>
-        <!-- main header -->
-        <div class="header">
-            <a href="#" id="header__title">
-                <span><i class="fa-solid fa-dragon"></i></span>
-                WEC
-            </a>
-            <!-- main menu -->
-            <nav class="main-menu">
-                <a href="#titulo_1" class="main-menu__link">Artículo 1</a>
-                <a href="#titulo_2" class="main-menu__link">Artículo 2</a>
-                <a href="#titulo_3" class="main-menu__link">Artículo 3</a>
-                <!-- theme button -->
-                <div class="align-right">
-                    <input type="checkbox" class="main-menu__link theme-selector" id="theme-btn">
-                    <label for="theme-btn">
-                        <i class="fa-solid fa-moon dark-theme"></i>
-                        <i class="fa-regular fa-sun light-theme"></i>
-                    </label>
-                </div>
-            </nav>
-            <!-- responsive menu button -->
-            <input type="checkbox" class="menu-button" id="menu-btn" hidden>
-            <label for="menu-btn" class="menu-button__icon">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-bars-staggered"></i>
+      <div class="top-space" id="top"></div>
+      <!-- main header -->
+      <div class="header">
+        <a href="#" id="header__title">
+          <span><i class="fa-solid fa-dragon"></i></span>
+          WEC
+        </a>
+        <!-- main menu -->
+        <nav class="main-menu">
+          <a href="#articulo_1" class="main-menu__link">Artículo 1</a>
+          <a href="#articulo_2" class="main-menu__link">Artículo 2</a>
+          <a href="#articulo_3" class="main-menu__link">Artículo 3</a>
+          <!-- theme button -->
+          <div class="align-right">
+            <input
+              type="checkbox"
+              class="main-menu__link theme-selector"
+              id="theme-btn"
+            />
+            <label for="theme-btn">
+              <i class="fa-solid fa-moon dark-theme"></i>
+              <i class="fa-regular fa-sun light-theme"></i>
             </label>
+          </div>
+        </nav>
+        <!-- responsive menu button -->
+        <input type="checkbox" class="menu-button" id="menu-btn" hidden />
+        <label for="menu-btn" class="menu-button__icon">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars-staggered"></i>
+        </label>
+      </div>
+
+      <div class="container">
+        <!-- section content -->
+        <div class="main-section">
+          <section class="article-box">
+            <h1 id="articulo_1" class="article-box__title">Unidad I</h1>
+            <article class="article-box__content">
+              <p>
+                JavaScript nace en 1995, creado por un señor que se llama
+                Brendan Eich. Éste hombre trabajaba en una empresa de
+                tecnología, en la cual usaba como navegador NetScape. Éste
+                lenguaje de programación se implementó con mucha velocidad
+                gracias a su éxito, y Microsoft sacó una versión propia llamada
+                JScript. Llega un punto en que se estandarizó el lenguaje
+                gracias a la implementación de ECMAScript, de ECMA
+                International, y se publicó en 1997. A lo largo de los años se
+                ha ido actualizando hasta su versión más reciente, ES 2015,
+                también conocida como ES6 por ser la sexta versión.
+              </p>
+              <!-- details box -->
+              <details class="details" open>
+                <summary class="details-title">Prueba JavaScript</summary>
+                <div class="details-content">
+                  <p>
+                    Haz clic en el botón y revisa la consola con F12.
+                  </p>
+                  <a href="#" onclick="console.log('¡virus pa tu body!');">¡Haz click aquí, para nada sospechoso!</a>
+                  <a href="#" onclick="saluda();">¡Saludar!</a>
+                </div>
+              </details>
+            </article>
+          </section>
+
+          <section class="article-box">
+            <h1 id="articulo_2" class="article-box__title">Unidad II</h1>
+            <article class="article-box__content">
+              <p>
+                Fugiat reprehenderit doloremque consequatur ratione suscipit,
+                nesciunt autem dignissimos dicta esse, eum itaque cumque
+                molestias molestiae provident natus laudantium, qui numquam
+                asperiores! Nihil officiis maiores, consequuntur harum
+                laudantium, ea velit distinctio perferendis, optio quam sed ut
+                modi accusantium repudiandae repellendus et esse perspiciatis
+                ipsam at similique. Placeat consectetur, inventore dignissimos
+                cum ea quos qui aperiam pariatur vel ullam, beatae quaerat quis
+                praesentium dolorum. Debitis id fuga obcaecati neque, quaerat
+                odio ut corrupti officiis qui. Ex voluptate dignissimos quas
+                tenetur sequi, omnis, veritatis maiores cumque pariatur tempora
+                fuga delectus temporibus blanditiis nam nobis. Cum non magni
+                iusto rem optio natus incidunt ad inventore reprehenderit
+                adipisci eos alias quibusdam exercitationem, consectetur veniam
+                iste esse nostrum eligendi ex eaque, quisquam tempora quaerat.
+                Dolore, accusantium aliquid tenetur perspiciatis laudantium
+                deleniti harum blanditiis, praesentium incidunt sit, laborum
+                fugit. Ratione debitis impedit cumque quaerat ipsa iure aut
+                dicta voluptas est cum rem dolores similique laborum eligendi
+                porro sunt modi laudantium quia, veniam, temporibus vero
+                explicabo id officia? Iusto impedit veniam nulla. Ipsam, ipsa
+                doloremque. Voluptatibus dolores aliquam aut officiis ea culpa.
+                Similique, hic. Optio, quos ipsam, doloribus voluptatum ullam
+                impedit a odio quaerat, consequuntur corrupti magnam? Porro
+                tempore quis architecto fugit mollitia modi nulla debitis quia!
+                Assumenda quas libero explicabo molestiae debitis minus sint
+                rem. Maiores vitae nemo pariatur, libero iure in minus laborum
+                necessitatibus, voluptas consequatur aliquam itaque tenetur odit
+                sunt veritatis! Exercitationem placeat sit architecto, tempora
+                temporibus error magnam perspiciatis dignissimos, natus totam
+                assumenda nam voluptate ullam provident, cum omnis eligendi
+                dolorum aspernatur? Commodi velit ea dolorem recusandae, ad
+                eveniet labore eligendi perferendis error fugiat, doloribus
+                cupiditate, atque voluptatem quo temporibus nisi amet beatae
+                corrupti cum quae asperiores impedit at assumenda! Sunt
+                similique sit quod tempore numquam sequi explicabo, unde ipsum
+                neque eum facere sed assumenda aut nobis placeat nesciunt
+                consectetur reiciendis nihil laborum magni tenetur dolorum
+                cumque. Veritatis reiciendis saepe molestiae omnis! Voluptates
+                temporibus deserunt soluta aliquid voluptatem, molestiae cum
+                enim magnam, delectus ab omnis eius, dolorum doloremque! Eveniet
+                reiciendis enim officiis repellat quis ex possimus inventore ab
+                sint omnis aliquam, perspiciatis repellendus ipsam non neque
+                rerum molestias iusto tempora eius asperiores corrupti. Itaque
+                quae at placeat omnis cum pariatur eius quos. Deserunt commodi
+                aspernatur tempore iusto nisi facilis accusantium nam sed et
+                neque dolore magni ratione architecto eum eligendi odio,
+                explicabo quae sunt quo est molestias optio placeat! Eaque
+                doloremque sequi quas tenetur id.
+              </p>
+            </article>
+          </section>
+
+          <section class="article-box">
+            <h1 id="articulo_3" class="article-box__title">Artículo III</h1>
+            <article class="article-box__content">
+              <p>
+                Nam animi dolorum temporibus est, porro atque corporis rerum
+                dignissimos esse id nostrum excepturi praesentium, officiis ipsa
+                quidem dolores consectetur maxime fuga, doloremque quibusdam
+                enim culpa! Eos quibusdam quaerat maiores neque accusantium sit
+                sunt, facilis consequuntur ducimus eligendi eaque commodi
+                similique tempora aut aspernatur, sequi eveniet itaque
+                voluptatibus enim repudiandae distinctio porro asperiores
+                laborum! Facere veritatis voluptate assumenda. Assumenda
+                possimus ipsam cum! Inventore harum dolores, repellendus
+                voluptatum, saepe eum ducimus id dignissimos dolore
+                exercitationem cum quos vero maiores ut fuga, sapiente
+                reprehenderit sint. Delectus eligendi quia praesentium vel quos
+                iusto repellat iste vero vitae tempora! Vitae quos temporibus,
+                ipsum nemo, sint necessitatibus, accusamus maxime itaque libero
+                voluptate mollitia repudiandae quas. Aliquam ad, consequuntur,
+                molestias rem provident ipsam blanditiis facilis, fugiat labore
+                odit libero amet magni voluptatum sint illo ullam eius. Animi,
+                odio optio expedita nulla consequatur earum tempore aperiam cum
+                blanditiis! Inventore facilis incidunt beatae dolore eaque,
+                perspiciatis veritatis aliquam ipsum, quo corrupti totam
+                accusantium repudiandae ipsam fuga iusto corporis deserunt
+                suscipit quis doloribus. Harum reiciendis cumque qui accusamus,
+                esse quaerat nihil illo optio dignissimos tenetur reprehenderit
+                non, pariatur libero illum eligendi! Pariatur aliquam a fugit
+                illo ab corporis beatae dolore suscipit voluptatibus, quibusdam
+                alias inventore, odio, facilis possimus repellendus quae atque
+                quis consequuntur! Magnam et ullam autem adipisci ea provident
+                recusandae in! Odio assumenda aspernatur voluptate? Placeat fuga
+                eveniet dignissimos facilis, ipsum corrupti quae facere, non
+                necessitatibus sunt ratione sapiente accusantium ad, quas optio
+                expedita. Maiores aperiam culpa saepe, perferendis quos placeat
+                quas eaque accusamus fuga vel mollitia dolorum iusto, animi
+                rerum dolorem sed ducimus aspernatur possimus. Accusantium,
+                possimus. Quia maiores maxime, et repudiandae sunt cumque eum
+                dolorum reprehenderit ullam impedit veritatis neque, temporibus
+                possimus. Voluptatem nesciunt asperiores numquam itaque nemo
+                enim minima rerum, consequatur mollitia dolores accusamus, quod
+                veniam ad.
+              </p>
+            </article>
+          </section>
         </div>
 
-        <div class="container">
-            <!-- section content -->
-            <div class="main-section">
+        <!-- go to top button -->
+        <a href="#top" class="totop-btn">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
 
-                <section class="article-box">
-                    <h1 id="titulo_1" class="article-box__title">Artículo I</h1>
-                    <article class="article-box__content">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facilis officia aliquam
-                            debitis impedit recusandae? Odio, praesentium earum reiciendis voluptatum numquam similique
-                            eius porro accusamus enim quidem consequatur quam ipsam aliquid delectus perferendis
-                            molestias officiis tempore. Explicabo deserunt, ducimus architecto culpa deleniti optio
-                            dolorem, eaque, officia fugiat a perspiciatis error eveniet laudantium sapiente cumque ad.
-                            Aut adipisci assumenda dignissimos voluptate eligendi, ex culpa omnis quis accusamus nisi
-                            eos minima quas provident impedit illum rem corrupti consequuntur saepe praesentium? Vitae
-                            at odit, quidem itaque ipsum beatae ab explicabo suscipit voluptatibus consequuntur
-                            veritatis impedit temporibus dignissimos molestias non nobis doloribus. Temporibus autem
-                            illum iure. Voluptatibus temporibus dicta doloremque ipsum culpa quisquam sed deserunt
-                            consequuntur iste fugit. Delectus labore, minus dolorum explicabo perspiciatis eius ullam
-                            nesciunt quaerat similique inventore architecto iure veniam praesentium! Dignissimos sint
-                            vero dolorum, porro ut recusandae eveniet odio exercitationem molestiae, nam iste voluptates
-                            facilis ad illo aliquid. Mollitia amet eligendi harum quibusdam ullam, distinctio quisquam
-                            natus aliquid nostrum architecto obcaecati officia magnam nam laborum ipsa minus in
-                            voluptas. Aliquam nesciunt ad animi neque at possimus aut optio, recusandae eum nisi sequi
-                            odio obcaecati voluptatum! Dolorem ratione consequuntur sapiente perferendis incidunt
-                            quisquam molestiae magni iste eveniet accusantium dicta recusandae blanditiis sequi
-                            excepturi atque placeat nobis soluta obcaecati, deserunt quo voluptatem possimus alias!
-                            Minima cupiditate quos reprehenderit amet nesciunt voluptas quo cum, nostrum perspiciatis
-                            aliquam eius! Praesentium ullam delectus modi quas veniam eveniet cupiditate aperiam in cum,
-                            natus aliquam non sint rerum atque repellat odio neque suscipit vero animi minus, eos hic
-                            tempore id. Asperiores nam ab tempora numquam perspiciatis laboriosam. Nam similique labore
-                            mollitia quae, ipsam nostrum. Suscipit molestias amet necessitatibus quae eveniet sit soluta
-                            quod, incidunt vel temporibus quo ex vitae, molestiae quisquam deleniti, architecto cum sint
-                            laboriosam est ab. Facere provident itaque natus enim cupiditate accusantium quos dicta eos
-                            veniam optio ullam in quo incidunt, repellat sit quam tempore, ducimus temporibus porro.
-                            Temporibus assumenda ex tempora soluta explicabo similique eius repellendus cum quas.
-                            Maiores architecto repellat quisquam, rem aspernatur totam facere, commodi eveniet ullam
-                            perspiciatis ratione voluptates voluptatum, nihil blanditiis dicta. Aspernatur tenetur
-                            facere asperiores beatae corrupti, minima saepe blanditiis odio non quos impedit culpa alias
-                            fuga velit excepturi iste exercitationem illum distinctio totam sint veniam odit magnam
-                            repellat. Fugit eius, error fugiat amet dolore ad ea a iusto obcaecati veniam excepturi
-                            soluta nam nostrum fuga optio ullam, similique libero quia nihil eos alias quisquam
-                            explicabo dolores! Dolorum aliquid totam sed laudantium eum quod! Voluptatibus, cum. Veniam
-                            officia dicta fugiat officiis aliquam, beatae consequuntur earum a temporibus quis vel
-                            veritatis reiciendis sit eveniet. Nihil laborum tempore porro animi maxime et tempora iste,
-                            facere quasi nemo, voluptatem, consequuntur ullam autem. Fugiat tempora aperiam explicabo
-                            dicta maxime mollitia, praesentium quasi unde incidunt? Repudiandae expedita placeat facilis
-                            quibusdam repellendus velit non nesciunt? Veritatis fugiat, laudantium cupiditate odio
-                            facilis aut rem natus magni at et quis sed adipisci atque ipsa sapiente iusto placeat
-                            quisquam possimus quia iste enim a? Et corrupti error quae magni quis tempora porro,
-                            laudantium veritatis vero, omnis laborum.
-                        </p>
-                        <details class="details">
-                            <summary class="details-title">Información adicional</summary>
-                            <div class="details-content">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ducimus eos quis
-                                    dignissimos quos pariatur magni, blanditiis recusandae vel asperiores tenetur,
-                                    dolorem repellat a voluptates quisquam dolor accusamus! Cumque, culpa.</p>
-                            </div>
-                        </details>
-                    </article>
-                </section>
-
-                <section class="article-box">
-                    <h1 id="titulo_2" class="article-box__title">Artículo II</h1>
-                    <article class="article-box__content">
-                        <p>Fugiat reprehenderit doloremque
-                            consequatur ratione suscipit, nesciunt autem dignissimos dicta esse, eum itaque cumque
-                            molestias molestiae provident natus laudantium, qui numquam asperiores! Nihil officiis
-                            maiores, consequuntur harum laudantium, ea velit distinctio perferendis, optio quam sed ut
-                            modi accusantium repudiandae repellendus et esse perspiciatis ipsam at similique. Placeat
-                            consectetur, inventore dignissimos cum ea quos qui aperiam pariatur vel ullam, beatae
-                            quaerat quis praesentium dolorum. Debitis id fuga obcaecati neque, quaerat odio ut corrupti
-                            officiis qui. Ex voluptate dignissimos quas tenetur sequi, omnis, veritatis maiores cumque
-                            pariatur tempora fuga delectus temporibus blanditiis nam nobis. Cum non magni iusto rem
-                            optio natus incidunt ad inventore reprehenderit adipisci eos alias quibusdam exercitationem,
-                            consectetur veniam iste esse nostrum eligendi ex eaque, quisquam tempora quaerat. Dolore,
-                            accusantium aliquid tenetur perspiciatis laudantium deleniti harum blanditiis, praesentium
-                            incidunt sit, laborum fugit. Ratione debitis impedit cumque quaerat ipsa iure aut dicta
-                            voluptas est cum rem dolores similique laborum eligendi porro sunt modi laudantium quia,
-                            veniam, temporibus vero explicabo id officia? Iusto impedit veniam nulla. Ipsam, ipsa
-                            doloremque. Voluptatibus dolores aliquam aut officiis ea culpa. Similique, hic. Optio, quos
-                            ipsam, doloribus voluptatum ullam impedit a odio quaerat, consequuntur corrupti magnam?
-                            Porro tempore quis architecto fugit mollitia modi nulla debitis quia! Assumenda quas libero
-                            explicabo molestiae debitis minus sint rem. Maiores vitae nemo pariatur, libero iure in
-                            minus laborum necessitatibus, voluptas consequatur aliquam itaque tenetur odit sunt
-                            veritatis! Exercitationem placeat sit architecto, tempora temporibus error magnam
-                            perspiciatis dignissimos, natus totam assumenda nam voluptate ullam provident, cum omnis
-                            eligendi dolorum aspernatur? Commodi velit ea dolorem recusandae, ad eveniet labore eligendi
-                            perferendis error fugiat, doloribus cupiditate, atque voluptatem quo temporibus nisi amet
-                            beatae corrupti cum quae asperiores impedit at assumenda! Sunt similique sit quod tempore
-                            numquam sequi explicabo, unde ipsum neque eum facere sed assumenda aut nobis placeat
-                            nesciunt consectetur reiciendis nihil laborum magni tenetur dolorum cumque. Veritatis
-                            reiciendis saepe molestiae omnis! Voluptates temporibus deserunt soluta aliquid voluptatem,
-                            molestiae cum enim magnam, delectus ab omnis eius, dolorum doloremque! Eveniet reiciendis
-                            enim officiis repellat quis ex possimus inventore ab sint omnis aliquam, perspiciatis
-                            repellendus ipsam non neque rerum molestias iusto tempora eius asperiores corrupti. Itaque
-                            quae at placeat omnis cum pariatur eius quos. Deserunt commodi aspernatur tempore iusto nisi
-                            facilis accusantium nam sed et neque dolore magni ratione architecto eum eligendi odio,
-                            explicabo quae sunt quo est molestias optio placeat! Eaque doloremque sequi quas tenetur id.
-                        </p>
-                    </article>
-                </section>
-
-                <section class="article-box">
-                    <h1 id="titulo_3" class="article-box__title">Artículo III</h1>
-                    <article class="article-box__content">
-                        <p>Nam animi dolorum temporibus est,
-                            porro atque corporis rerum dignissimos esse id nostrum excepturi praesentium, officiis ipsa
-                            quidem dolores consectetur maxime fuga, doloremque quibusdam enim culpa! Eos quibusdam
-                            quaerat maiores neque accusantium sit sunt, facilis consequuntur ducimus eligendi eaque
-                            commodi similique tempora aut aspernatur, sequi eveniet itaque voluptatibus enim repudiandae
-                            distinctio porro asperiores laborum! Facere veritatis voluptate assumenda. Assumenda
-                            possimus ipsam cum! Inventore harum dolores, repellendus voluptatum, saepe eum ducimus id
-                            dignissimos dolore exercitationem cum quos vero maiores ut fuga, sapiente reprehenderit
-                            sint. Delectus eligendi quia praesentium vel quos iusto repellat iste vero vitae tempora!
-                            Vitae quos temporibus, ipsum nemo, sint necessitatibus, accusamus maxime itaque libero
-                            voluptate mollitia repudiandae quas. Aliquam ad, consequuntur, molestias rem provident ipsam
-                            blanditiis facilis, fugiat labore odit libero amet magni voluptatum sint illo ullam eius.
-                            Animi, odio optio expedita nulla consequatur earum tempore aperiam cum blanditiis! Inventore
-                            facilis incidunt beatae dolore eaque, perspiciatis veritatis aliquam ipsum, quo corrupti
-                            totam accusantium repudiandae ipsam fuga iusto corporis deserunt suscipit quis doloribus.
-                            Harum reiciendis cumque qui accusamus, esse quaerat nihil illo optio dignissimos tenetur
-                            reprehenderit non, pariatur libero illum eligendi! Pariatur aliquam a fugit illo ab corporis
-                            beatae dolore suscipit voluptatibus, quibusdam alias inventore, odio, facilis possimus
-                            repellendus quae atque quis consequuntur! Magnam et ullam autem adipisci ea provident
-                            recusandae in! Odio assumenda aspernatur voluptate? Placeat fuga eveniet dignissimos
-                            facilis, ipsum corrupti quae facere, non necessitatibus sunt ratione sapiente accusantium
-                            ad, quas optio expedita. Maiores aperiam culpa saepe, perferendis quos placeat quas eaque
-                            accusamus fuga vel mollitia dolorum iusto, animi rerum dolorem sed ducimus aspernatur
-                            possimus. Accusantium, possimus. Quia maiores maxime, et repudiandae sunt cumque eum dolorum
-                            reprehenderit ullam impedit veritatis neque, temporibus possimus. Voluptatem nesciunt
-                            asperiores numquam itaque nemo enim minima rerum, consequatur mollitia dolores accusamus,
-                            quod veniam ad.</p>
-                    </article>
-                </section>
-
+        <!-- footer -->
+        <footer class="footer">
+          <div class="footer-section">
+            <!-- footer column -->
+            <div class="footer-section-column">
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Web desarrollada por</h4>
+                <div class="footer-section-row__content">
+                  <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>
+                  <a href="https://github.com/agarriga18696" target="_blank">
+                    Github
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </section>
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Lenguajes utilizados</h4>
+                <div class="footer-section-row__content">
+                  <label>
+                    HTML
+                    <i class="fa-brands fa-html5"></i>
+                  </label>
+                  <label>
+                    CSS
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </label>
+                </div>
+              </section>
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Contacto</h4>
+                <div class="footer-section-row__content">
+                  <a href="mailto:agarriga18696@iesjoanramis.org"
+                    >agarriga18696@iesjoanramis.org</a
+                  >
+                </div>
+              </section>
             </div>
 
-            <!-- go to top button -->
-            <a href="#top" class="totop-btn">
-                <i class="fa-solid fa-angle-up"></i>
-            </a>
-
-            <!-- footer -->
-            <footer class="footer">
-                <div class="footer-section">
-
-                    <!-- footer column -->
-                    <div class="footer-section-column">
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Web desarrollada por</h4>
-                            <div class="footer-section-row__content">
-                                <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>
-                                <a href="https://github.com/agarriga18696" target="_blank">
-                                    Github
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </section>
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Lenguajes utilizados</h4>
-                            <div class="footer-section-row__content">
-                                <label>
-                                    HTML
-                                    <i class="fa-brands fa-html5"></i>
-                                </label>
-                                <label>
-                                    CSS
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </label>
-                            </div>
-                        </section>
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Contacto</h4>
-                            <div class="footer-section-row__content">
-                                <a href="mailto:agarriga18696@iesjoanramis.org">agarriga18696@iesjoanramis.org</a>
-                            </div>
-                        </section>
-                    </div>
-
-                    <!-- footer column -->
-                    <div class="footer-section__column">
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Recursos</h4>
-                            <div class="footer-section-row__content">
-                                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
-                                <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
-                                <a href="https://huemint.com/" target="_blank">Huemint</a>
-                                <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
-                                <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
-                                <a href="https://autoprefixer.github.io/" target="_blank">Autoprefixer CSS</a>
-                            </div>
-                        </section>
-                    </div>
+            <!-- footer column -->
+            <div class="footer-section__column">
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Recursos</h4>
+                <div class="footer-section-row__content">
+                  <a href="https://www.w3schools.com/" target="_blank"
+                    >W3Schools</a
+                  >
+                  <a href="https://developer.mozilla.org/" target="_blank"
+                    >MDN Web Docs</a
+                  >
+                  <a href="https://huemint.com/" target="_blank">Huemint</a>
+                  <a href="https://fontawesome.com/" target="_blank"
+                    >Font Awesome</a
+                  >
+                  <a href="https://fonts.google.com/" target="_blank"
+                    >Google Fonts</a
+                  >
+                  <a href="https://autoprefixer.github.io/" target="_blank"
+                    >Autoprefixer CSS</a
+                  >
                 </div>
-            </footer>
-
-        </div>
+              </section>
+            </div>
+          </div>
+        </footer>
+      </div>
     </main>
-</body>
-
+    <!-- js -->
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
 </html>
