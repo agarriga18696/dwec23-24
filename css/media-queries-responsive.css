@@ -1,5 +1,5 @@
 /* computer & laptop */
-@media only screen and (width <= 1200px) {
+@media only screen and (max-width: 1200px) {
 
     .main-container {
         --doc-width: 80vw;
@@ -8,20 +8,15 @@
 }
 
 /* tablets */
-@media only screen and (width <= 768px) {
+@media only screen and (max-width: 768px) {
 
     .main-container {
         --doc-width: 90vw;
     }
 
     .main-menu {
-        position: absolute;
-        overflow-y: auto;
-        right: -35vw;
-        top: 0;
-        width: 35vw;
-        height: 100vh;
-        padding-top: 9rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -35,6 +30,13 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        overflow-y: auto;
+        position: absolute;
+        right: -35vw;
+        top: 0;
+        width: 35vw;
+        height: 100vh;
+        padding-top: 9rem;
         background-color: var(--primary-color-transparent);
         backdrop-filter: blur(1rem);
     }
@@ -61,7 +63,7 @@
 }
 
 /* smartphones and smaller screens */
-@media (width <= 768px) {
+@media only screen and (max-width: 768px) {
 
     body {
         font-size: 110%;
@@ -72,11 +74,15 @@
     }
 
     .menu-button {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         visibility: visible;
     }
 
     .menu-button__icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         visibility: visible;
         cursor: pointer;
@@ -108,7 +114,7 @@
 
 }
 
-@media (width <= 430px) {
+@media only screen and (max-width: 430px) {
 
     .footer-section-row__title {
         font-size: 1.2em;
@@ -119,7 +125,7 @@
     }
 }
 
-@media (width <= 360px) {
+@media only screen and (max-width: 360px) {
 
     * {
         font-size: 96%;

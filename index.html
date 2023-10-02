@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css links -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main-content.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/media-queries-responsive.css">
     <link rel="stylesheet" href="css/variables.css">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -49,13 +48,13 @@
             </label>
         </div>
 
-        <section class="container">
+        <div class="container">
             <!-- section content -->
             <div class="main-section">
 
-                <article class="article-box">
+                <section class="article-box">
                     <h1 id="titulo_1" class="article-box__title">Artículo I</h1>
-                    <div class="article-box__content">
+                    <article class="article-box__content">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus facilis officia aliquam
                             debitis impedit recusandae? Odio, praesentium earum reiciendis voluptatum numquam similique
                             eius porro accusamus enim quidem consequatur quam ipsam aliquid delectus perferendis
@@ -98,13 +97,22 @@
                             quibusdam repellendus velit non nesciunt? Veritatis fugiat, laudantium cupiditate odio
                             facilis aut rem natus magni at et quis sed adipisci atque ipsa sapiente iusto placeat
                             quisquam possimus quia iste enim a? Et corrupti error quae magni quis tempora porro,
-                            laudantium veritatis vero, omnis laborum.</p>
-                    </div>
-                </article>
+                            laudantium veritatis vero, omnis laborum.
+                        </p>
+                        <details class="details">
+                            <summary class="details-title">Información adicional</summary>
+                            <div class="details-content">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum ducimus eos quis
+                                    dignissimos quos pariatur magni, blanditiis recusandae vel asperiores tenetur,
+                                    dolorem repellat a voluptates quisquam dolor accusamus! Cumque, culpa.</p>
+                            </div>
+                        </details>
+                    </article>
+                </section>
 
-                <article class="article-box">
+                <section class="article-box">
                     <h1 id="titulo_2" class="article-box__title">Artículo II</h1>
-                    <div class="article-box__content">
+                    <article class="article-box__content">
                         <p>Fugiat reprehenderit doloremque
                             consequatur ratione suscipit, nesciunt autem dignissimos dicta esse, eum itaque cumque
                             molestias molestiae provident natus laudantium, qui numquam asperiores! Nihil officiis
@@ -140,12 +148,12 @@
                             facilis accusantium nam sed et neque dolore magni ratione architecto eum eligendi odio,
                             explicabo quae sunt quo est molestias optio placeat! Eaque doloremque sequi quas tenetur id.
                         </p>
-                    </div>
-                </article>
+                    </article>
+                </section>
 
-                <article class="article-box">
+                <section class="article-box">
                     <h1 id="titulo_3" class="article-box__title">Artículo III</h1>
-                    <div class="article-box__content">
+                    <article class="article-box__content">
                         <p>Nam animi dolorum temporibus est,
                             porro atque corporis rerum dignissimos esse id nostrum excepturi praesentium, officiis ipsa
                             quidem dolores consectetur maxime fuga, doloremque quibusdam enim culpa! Eos quibusdam
@@ -173,34 +181,35 @@
                             reprehenderit ullam impedit veritatis neque, temporibus possimus. Voluptatem nesciunt
                             asperiores numquam itaque nemo enim minima rerum, consequatur mollitia dolores accusamus,
                             quod veniam ad.</p>
-                    </div>
-                </article>
+                    </article>
+                </section>
 
             </div>
-            
+
             <!-- go to top button -->
             <a href="#top" class="totop-btn">
                 <i class="fa-solid fa-angle-up"></i>
             </a>
-            
+
             <!-- footer -->
             <footer class="footer">
-                <section class="footer-section">
+                <div class="footer-section">
+
                     <!-- footer column -->
                     <div class="footer-section-column">
                         <!-- footer row -->
-                        <div class="footer-section-row">
+                        <section class="footer-section-row">
                             <h4 class="footer-section-row__title">Web desarrollada por</h4>
                             <div class="footer-section-row__content">
-                                <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>    
+                                <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>
                                 <a href="https://github.com/agarriga18696" target="_blank">
                                     Github
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </div>
-                        </div>
+                        </section>
                         <!-- footer row -->
-                        <div class="footer-section-row">
+                        <section class="footer-section-row">
                             <h4 class="footer-section-row__title">Lenguajes utilizados</h4>
                             <div class="footer-section-row__content">
                                 <label>
@@ -212,19 +221,20 @@
                                     <i class="fa-brands fa-css3-alt"></i>
                                 </label>
                             </div>
-                        </div>
+                        </section>
                         <!-- footer row -->
-                        <div class="footer-section-row">
+                        <section class="footer-section-row">
                             <h4 class="footer-section-row__title">Contacto</h4>
                             <div class="footer-section-row__content">
-                                <a href="mailto:agarriga18696@iesjoanramis.org">agarriga18696@iesjoanramis.org</a>        
+                                <a href="mailto:agarriga18696@iesjoanramis.org">agarriga18696@iesjoanramis.org</a>
                             </div>
-                        </div>
+                        </section>
                     </div>
+
                     <!-- footer column -->
                     <div class="footer-section__column">
                         <!-- footer row -->
-                        <div class="footer-section-row">
+                        <section class="footer-section-row">
                             <h4 class="footer-section-row__title">Recursos</h4>
                             <div class="footer-section-row__content">
                                 <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
@@ -234,12 +244,12 @@
                                 <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
                                 <a href="https://autoprefixer.github.io/" target="_blank">Autoprefixer CSS</a>
                             </div>
-                        </div>
+                        </section>
                     </div>
-                </section>
+                </div>
             </footer>
 
-        </section>
+        </div>
     </main>
 </body>
 

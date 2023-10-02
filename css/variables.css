@@ -2,11 +2,11 @@
 :root {
 
     /* color palette */
-    --primary-color: hsl(36, 13%, 92%); /* f0f3f2 */ /* f6f7f4 */
-    --secondary-color: hsl(30, 40%, 49%); /* be9b73 */ /* 2d3a40 */
-    --emphasys-color: hsl(25, 8%, 16%); /* 4f586c */ /* 2d9283 */
-    --primary-color-transparent: hsla(36, 13%, 92%, 30%);
-    --emphasys-color-transparent: hsla(25, 8%, 16%, 30%);
+    --primary-color: hsl(06, 0%, 92%);
+    --secondary-color: hsl(35, 44%, 58%);
+    --emphasys-color: hsl(25, 0%, 16%);
+    --primary-color-transparent: hsla(06, 0%, 92%, 30%);
+    --emphasys-color-transparent: hsla(25, 0%, 16%, 30%);
 
     /* document width */
     --doc-width: 50vw;
