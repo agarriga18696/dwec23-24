@@ -12,7 +12,30 @@ body {
     font-size: 100%;
 }
 
-/* generic btn */
+/* ordered list */
+.ordered_list {
+    margin-top: -.5rem;
+}
+
+.ordered_list>li {
+    list-style-type: inherit;
+    caret-color: var(--secondary-color);
+    color: var(--emphasys-color);
+    line-height: 2rem;
+}
+
+.ordered_list>*>i {
+    margin-right: .25rem;
+    color: var(--secondary-color);
+}
+
+.circle {
+    list-style-type: circle;
+}
+
+.decimal {
+    list-style-type: decimal;
+}
 
 /* main container wrapper */
 .main-container {
@@ -372,10 +395,10 @@ span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -387,11 +410,17 @@ span {
 }
 
 /* capitular */
-.article-box__content>p::first-letter {
+.article-box__content>p.p_capital_letter::first-letter {
     font-family: var(--decorative-font);
     color: var(--secondary-color);
     initial-letter: 3;
     padding-right: .8rem;
+}
+
+.article-box__content~ol.ordered_list,
+li {
+    margin-left: 2rem;
+    color: red;
 }
 
 details summary {
@@ -424,11 +453,12 @@ details summary::marker {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 1.25rem;
 }
 
-.details-content > a {
+.details-content>a {
     display: block;
     background-color: var(--secondary-color);
     padding: .5rem;
