@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Andreu Garriga</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,120 +11,188 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/media-queries-responsive.css" />
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <main class="main-container">
-        <div class="top-space" id="top"></div>
-        <!-- main header -->
-        <div class="header">
-            <a href="#" id="header__title">
-                <span><i class="fa-solid fa-dragon"></i></span>
-                WEC
-            </a>
-            <!-- main menu -->
-            <nav class="main-menu">
-                <a href="#articulo_1" class="main-menu__link">Unidad I</a>
-                <a href="#articulo_2" class="main-menu__link">Unidad II</a>
-                <a href="#articulo_3" class="main-menu__link">Unidad III</a>
-                <a href="#articulo_4" class="main-menu__link">Unidad IV</a>
-                <!-- theme button -->
-                <div class="align-right">
-                    <input type="checkbox" class="main-menu__link theme-selector" id="theme-btn" />
-                    <label for="theme-btn">
-                        <i class="fa-solid fa-moon dark-theme"></i>
-                        <i class="fa-regular fa-sun light-theme"></i>
-                    </label>
-                </div>
-            </nav>
-            <!-- responsive menu button -->
-            <input type="checkbox" class="menu-button" id="menu-btn" hidden />
-            <label for="menu-btn" class="menu-button__icon">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-bars-staggered"></i>
+      <div class="top-space" id="top"></div>
+      <!-- main header -->
+      <div class="header">
+        <a href="#" id="header__title">
+          <span><i class="fa-solid fa-dragon"></i></span>
+          WEC
+        </a>
+        <!-- main menu -->
+        <nav class="main-menu">
+          <a href="#articulo_1" class="main-menu__link">Unidad I</a>
+          <a href="#articulo_2" class="main-menu__link">Unidad II</a>
+          <a href="#articulo_3" class="main-menu__link">Unidad III</a>
+          <a href="#articulo_4" class="main-menu__link">Unidad IV</a>
+          <!-- theme button -->
+          <div class="align-right">
+            <input
+              type="checkbox"
+              class="main-menu__link theme-selector"
+              id="theme-btn"
+            />
+            <label for="theme-btn">
+              <i class="fa-solid fa-moon dark-theme"></i>
+              <i class="fa-regular fa-sun light-theme"></i>
             </label>
-        </div>
+          </div>
+        </nav>
+        <!-- responsive menu button -->
+        <input type="checkbox" class="menu-button" id="menu-btn" hidden />
+        <label for="menu-btn" class="menu-button__icon">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars-staggered"></i>
+        </label>
+      </div>
 
-        <div class="container">
-            <!-- section content -->
-            <div class="main-section">
-                <section class="article-box">
-                    <h1 id="articulo_1" class="article-box__title">Unidad I</h1>
-                    <article class="article-box__content">
-                        <h3 class="title_3">I.I Historia de JavaScript</h3>
-                        <p class="p_capital_letter">
-                            JavaScript nace en 1995, creado por un señor que se llama
-                            Brendan Eich. Éste hombre trabajaba en una empresa de
-                            tecnología, en la cual usaba como navegador NetScape. Éste
-                            lenguaje de programación se implementó con mucha velocidad
-                            gracias a su éxito, y Microsoft sacó una versión propia llamada
-                            JScript. Llega un punto en que se estandarizó el lenguaje
-                            gracias a la implementación de ECMAScript, de ECMA
-                            International, y se publicó en 1997. A lo largo de los años se
-                            ha ido actualizando hasta su versión más reciente, ES 2015,
-                            también conocida como ES6 por ser la sexta versión.
-                        </p>
-                        <p>
-                            Para poder interpretar el lenguaje los navegadores incluyen un motor de JavaScript, los más
-                            conocidos son:
-                        <ol class="ordered_list circle">
-                            <li><i class="fa-brands fa-firefox-browser" title="Mozilla Firefox"></i> Spider Monkey</li>
-                            <li><i class="fa-brands fa-chrome" title="Google Chrome"></i> V8</li>
-                            <li><i class="fa-brands fa-safari" title="Safari"></i> JavaScriptCore</li>
-                            <li><i class="fa-brands fa-opera" title="Opera"></i> Carakan</li>
-                            <li><i class="fa-brands fa-internet-explorer" title="Internet Explorer"></i> Chakra</li>
-                        </ol>
-                        </p>
-                        <p>
-                            JavaScript es un lenguaje single thread, solo tiene un hilo de ejecución, esto quiere decir
-                            que las tareas se ejecutan secuencialmente. En 2008 aparece el motor V8, desarrollado por
-                            Google, supone una gran mejora entre los motores ya existentes y es una mezcla entre
-                            compilador e intérprete. Esta técnica se llama JIT (Just-In-Time Compiler). El resto de
-                            motores utilizan ésta técnica.
-                        </p>
-                        <p>
-                            El motor traduce el código a bytecode, que se hace lo más rápido posible. Éste bytecode lo
-                            ejecuta el intérprete. Éste sistema de intérprete-compilador tiene una característica
-                            llamada Profiler, que es un mecanismo para optimizar el código, con el fin de mejorar el
-                            rendimiento.
-                        </p>
-                        <p>
-                            Hay una serie de elementos fundamentales que necesita JavaScript para su
-                            correcto funcionamiento:
-                        <ol class="ordered_list decimal">
-                            <li>Call Stack Heap</li>
-                            <li>Event Loop & Callback Queue</li>
-                            <li>Web Apis</li>
-                        </ol>
-                        </p>
-                        <p>
-                            Estas APIS facilitan la implementación de algunas funcionalidades, algunas de las más
-                            conocidas son:
-                        <ol class="ordered_list circle">
-                            <li>DOM</li>
-                            <li>XML HTTP Request</li>
-                            <li>Geolocalización</li>
-                            <li>Funciones timer</li>
-                        </ol>
-                        </p>
-                        <!-- details box -->
-                        <details class="details" open>
-                            <summary class="details-title">Prueba JavaScript</summary>
-                            <div class="details-content">
-                                <p>
-                                    Haz clic en el botón y revisa la consola con F12.
-                                </p>
-                                <a href="#" onclick="console.log('¡virus pa tu body!');">¡Haz click aquí, para nada
-                                    sospechoso!</a>
-                                <a href="#" onclick="saluda();">¡Saludar!</a>
-                            </div>
-                        </details>
-                    </article>
-                </section>
-                <!--
+      <div class="container">
+        <!-- section content -->
+        <div class="main-section">
+          <section class="article-box">
+            <h1 id="articulo_1" class="article-box__title">Unidad I</h1>
+            <article class="article-box__content">
+              <h3 class="title_3">1.1. Historia de JavaScript</h3>
+              <p class="p_capital_letter">
+                JavaScript nace en 1995, creado por un señor que se llama
+                <cite>Brendan Eich</cite>. Éste hombre trabajaba en una empresa de
+                tecnología, en la cual usaba como navegador <em>NetScape</em>. Éste
+                lenguaje de programación se implementó con mucha velocidad
+                gracias a su éxito, y Microsoft sacó una versión propia llamada
+                <em>JScript</em>. Llega un punto en que se estandarizó el lenguaje
+                gracias a la implementación de <em>ECMAScript</em>, de <cite>ECMA
+                    International</cite>, y se publicó en 1997. A lo largo de los años se
+                ha ido actualizando hasta su versión más reciente, ES 2015,
+                también conocida como ES6 por ser la sexta versión.
+              </p>
+              <p>
+                Para poder interpretar el lenguaje los navegadores incluyen un
+                motor de JavaScript, los más conocidos son:
+              </p>
+              <ol class="ordered_list circle">
+                <li>
+                  <i
+                    class="fa-brands fa-firefox-browser"
+                    title="Mozilla Firefox"
+                  ></i>
+                  Spider Monkey
+                </li>
+                <li>
+                  <i class="fa-brands fa-chrome" title="Google Chrome"></i> V8
+                </li>
+                <li>
+                  <i class="fa-brands fa-safari" title="Safari"></i>
+                  JavaScriptCore
+                </li>
+                <li>
+                  <i class="fa-brands fa-opera" title="Opera"></i> Carakan
+                </li>
+                <li>
+                  <i
+                    class="fa-brands fa-internet-explorer"
+                    title="Internet Explorer"
+                  ></i>
+                  Chakra
+                </li>
+              </ol>
+              <p>
+                JavaScript es un lenguaje single thread, solo tiene un hilo de
+                ejecución, esto quiere decir que las tareas se ejecutan
+                secuencialmente. En 2008 aparece el <em>motor V8</em>, desarrollado por
+                Google, supone una gran mejora entre los motores ya existentes y
+                es una mezcla entre compilador e intérprete. Esta técnica se
+                llama JIT <em>(Just-In-Time Compiler)</em>. El resto de motores utilizan
+                ésta técnica.
+              </p>
+              <p>
+                El motor traduce el código a bytecode, que se hace lo más rápido
+                posible. Éste bytecode lo ejecuta el intérprete. Éste sistema de
+                intérprete-compilador tiene una característica llamada <em>Profiler</em>,
+                que es un mecanismo para optimizar el código, con el fin de
+                mejorar el rendimiento.
+              </p>
+              <h3>1.2. Elementos fundamentales de JavaScript</h3>
+              <ol class="ordered_list decimal">
+                <li>Call Stack Heap</li>
+                <li>Event Loop & Callback Queue</li>
+                <li>Web Apis</li>
+                <li>Hoisting</li>
+              </ol>
+              <h3>Web Apis</h3>
+              <p>
+                Estas APIS facilitan la implementación de algunas
+                funcionalidades, algunas de las más conocidas son:
+              </p>
+              <ol class="ordered_list circle">
+                <li>
+                  <b>DOM (Document Object Mode):</b> es
+                  la manera en el que JavaScript interacciona con los elementos
+                  de una página web.
+                </li>
+                <li>
+                  <b>XML HTTP Request:</b> esta API nos
+                  permite hacer peticiones HTTP para comunicarnos con un
+                  servidor u otra página web.
+                </li>
+                <li>
+                  <b>Geolocalización:</b> GPS, Google
+                  Maps, etc.
+                </li>
+                <li>
+                  <b>Funciones de timer:</b> con esto
+                  podemos crear cuenta atrás, cronómetros, intervalos de tiempo,
+                  etc.
+                </li>
+              </ol>
+              <h3>1.3. Capacidades y limitaciones de ejecución</h3>
+              <ol class="ordered_list circle">
+                <li>
+                  <b>Capacidades:</b> JavaScript es un
+                  lenguaje de programación que es interpretado por el cliente.
+                  Existen multitud de clientes, en este caso son navegadores,
+                  por ejemplo: <em>Firefox</em>, <em>Safari</em>, <em>Google Chrome</em>, <em>Opera</em>, <em>Internet
+                    Explorer</em>, etc.
+                </li>
+                <li>
+                  <b>limitaciones:</b> no todos los
+                  navegadores soportan lenguajes de script <em>(JavaScript)</em> en el
+                  lado de cliente, los lenguajes de lado de servidor no suelen
+                  dar este tipo de problemas. Algunos dispositivos móviles
+                  tampoco pueden ejecutar JavaScript.
+                </li>
+              </ol>
+              <h3>1.3. Lenguajes de programación en entorno cliente</h3>
+              <p>
+                Cuando hablamos de lenguajes de programación en entorno cliente,
+                podemos distinguir dos variantes; aquellos que nos permiten dar
+                forma y estilo, como <em>HTML</em> y <em>CSS</em>, y por el otro lado los que les
+                aportan dinamismo, los lenguajes de script, por ejemplo:
+                <em>JavaScript</em>, <em>TypeScript</em>, etc.
+              </p>
+              <!-- details box -->
+              <details class="details" open>
+                <summary class="details-title">Prueba JavaScript</summary>
+                <div class="details-content">
+                  <p>Haz clic en el botón y revisa la consola con F12.</p>
+                  <a href="#" onclick="console.log('¡virus pa tu body!');"
+                    >¡Haz click aquí, para nada sospechoso!</a
+                  >
+                  <a href="#" onclick="saluda();">¡Saludar!</a>
+                </div>
+              </details>
+            </article>
+          </section>
+          <!--
           
           <section class="article-box">
             <h1 id="articulo_2" class="article-box__title">Unidad II</h1>
@@ -145,94 +212,101 @@
             </article>
           </section>
           -->
-                <!-- section content -->
-                <section class="article-box">
-                    <h1 id="articulo_4" class="article-box__title">Unidad IV</h1>
-                    <h4>Arrays y Funciones</h4>
-                    <article class="article-box__content">
-                        <p>
+          <!-- section content -->
+          <section class="article-box">
+            <h1 id="articulo_4" class="article-box__title">Unidad IV</h1>
+            <h4>Arrays y Funciones</h4>
+            <article class="article-box__content">
+              <p></p>
+              <!-- details box -->
+              <details class="details" open>
+                <summary class="details-title">Prueba JavaScript</summary>
+                <div class="details-content">
+                  <pre></pre>
+                </div>
+              </details>
+            </article>
+          </section>
+        </div>
 
-                        </p>
-                        <!-- details box -->
-                        <details class="details" open>
-                            <summary class="details-title">Prueba JavaScript</summary>
-                            <div class="details-content">
-                                <pre>
+        <!-- go to top button -->
+        <a href="#top" class="totop-btn">
+          <i class="fa-solid fa-angle-up"></i>
+        </a>
 
-                  </pre>
-                            </div>
-                        </details>
-                    </article>
-                </section>
+        <!-- footer -->
+        <footer class="footer">
+          <div class="footer-section">
+            <!-- footer column -->
+            <div class="footer-section-column">
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Web desarrollada por</h4>
+                <div class="footer-section-row__content">
+                  <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>
+                  <a href="https://github.com/agarriga18696" target="_blank">
+                    Github
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </section>
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Lenguajes utilizados</h4>
+                <div class="footer-section-row__content">
+                  <label>
+                    HTML
+                    <i class="fa-brands fa-html5"></i>
+                  </label>
+                  <label>
+                    CSS
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </label>
+                </div>
+              </section>
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Contacto</h4>
+                <div class="footer-section-row__content">
+                  <a href="mailto:agarriga18696@iesjoanramis.org"
+                    >agarriga18696@iesjoanramis.org</a
+                  >
+                </div>
+              </section>
             </div>
 
-            <!-- go to top button -->
-            <a href="#top" class="totop-btn">
-                <i class="fa-solid fa-angle-up"></i>
-            </a>
-
-            <!-- footer -->
-            <footer class="footer">
-                <div class="footer-section">
-                    <!-- footer column -->
-                    <div class="footer-section-column">
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Web desarrollada por</h4>
-                            <div class="footer-section-row__content">
-                                <p>Andreu Garriga Cendán &copy; 2023 - 2024</p>
-                                <a href="https://github.com/agarriga18696" target="_blank">
-                                    Github
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </div>
-                        </section>
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Lenguajes utilizados</h4>
-                            <div class="footer-section-row__content">
-                                <label>
-                                    HTML
-                                    <i class="fa-brands fa-html5"></i>
-                                </label>
-                                <label>
-                                    CSS
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                </label>
-                            </div>
-                        </section>
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Contacto</h4>
-                            <div class="footer-section-row__content">
-                                <a href="mailto:agarriga18696@iesjoanramis.org">agarriga18696@iesjoanramis.org</a>
-                            </div>
-                        </section>
-                    </div>
-
-                    <!-- footer column -->
-                    <div class="footer-section__column">
-                        <!-- footer row -->
-                        <section class="footer-section-row">
-                            <h4 class="footer-section-row__title">Recursos</h4>
-                            <div class="footer-section-row__content">
-                                <a href="https://www.w3schools.com/" target="_blank">W3Schools</a>
-                                <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a>
-                                <a href="https://huemint.com/" target="_blank">Huemint</a>
-                                <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
-                                <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
-                                <a href="https://autoprefixer.github.io/" target="_blank">Autoprefixer CSS</a>
-                            </div>
-                        </section>
-                    </div>
+            <!-- footer column -->
+            <div class="footer-section__column">
+              <!-- footer row -->
+              <section class="footer-section-row">
+                <h4 class="footer-section-row__title">Recursos</h4>
+                <div class="footer-section-row__content">
+                  <a href="https://www.w3schools.com/" target="_blank"
+                    >W3Schools</a
+                  >
+                  <a href="https://developer.mozilla.org/" target="_blank"
+                    >MDN Web Docs</a
+                  >
+                  <a href="https://huemint.com/" target="_blank">Huemint</a>
+                  <a href="https://fontawesome.com/" target="_blank"
+                    >Font Awesome</a
+                  >
+                  <a href="https://fonts.google.com/" target="_blank"
+                    >Google Fonts</a
+                  >
+                  <a href="https://autoprefixer.github.io/" target="_blank"
+                    >Autoprefixer CSS</a
+                  >
                 </div>
-            </footer>
-        </div>
+              </section>
+            </div>
+          </div>
+        </footer>
+      </div>
     </main>
     <!-- js -->
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/calculadoraNotes.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="js/planetas.js"></script>
+  </body>
 </html>

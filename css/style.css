@@ -14,14 +14,19 @@ body {
 
 /* ordered list */
 .ordered_list {
-    margin-top: -.5rem;
+    margin: .5rem 0 .5rem 0;
 }
 
 .ordered_list>li {
     list-style-type: inherit;
     caret-color: var(--secondary-color);
     color: var(--emphasys-color);
-    line-height: 2rem;
+    line-height: inherit;
+    margin-bottom: 1.25rem;
+}
+
+.ordered_list>li:last-of-type {
+    margin-bottom: 0rem;
 }
 
 .ordered_list>*>i {

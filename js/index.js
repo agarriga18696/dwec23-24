@@ -254,6 +254,6 @@ let unaWeb = new Web();
 unaWeb.url = "https://www.amazon.es";
 unaWeb.nombre = "Comprar online";
 
-console.log(unaWeb.miFuncion());
+// console.log(unaWeb.miFuncion());
 // console.log(unaWeb);
 // console.log(unaWeb.muestraInformacion());
