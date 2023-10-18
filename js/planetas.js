@@ -26,8 +26,6 @@ function crearObjetosPlaneta() {
     planeta.fechaDescubrimiento = Planeta.prototype.fechaDescubrimiento;
     planeta.distanciaSol = Planeta.prototype.distanciaSol;
 
-
-
     // BUCLE PARA CREAR OBJETOS CON LAS PROPIEDADES DEL CONSTRUCTOR PLANETA
     for (let i = 0; i < planetas.length; i++) {
 

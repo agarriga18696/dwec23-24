@@ -194,66 +194,268 @@ for (let i = 0; i < tablaMultiplicar.length; i++) {
 
 // ---------- METODOS COMO ELEMENTOS ----------
 
-function mediaNotas() {
-    let media = 0;
+// function mediaNotas() {
+//     let media = 0;
 
-    for(let i = 0; i < estudiante.notas.length; i++) {
-        media += estudiante.notas[i];
-    }
+//     for(let i = 0; i < estudiante.notas.length; i++) {
+//         media += estudiante.notas[i];
+//     }
 
-    media /= estudiante.notas.length;
+//     media /= estudiante.notas.length;
 
-    console.log(media);
-}
+//     console.log(media);
+// }
 
-// mediaNotas();
+// // mediaNotas();
 
-let estudiante = {
-    id: 2,
-    nombre: "Jason",
-    diHola: function() {
-        return "Hola";
-    },
-    notas: [10, 0, 4]
-}
+// let estudiante = {
+//     id: 2,
+//     nombre: "Jason",
+//     diHola: function() {
+//         return "Hola";
+//     },
+//     notas: [10, 0, 4]
+// }
 
-// this
+// // this
 
-let factura = {
-    descripcion: "factura de prueba",
-    precio: 100.0,
-    iva: 21.0,
-    divisa: "€",
-    subTotal: function() {
-        return this.precio;
-    },
-    total: function() {
-        return this.precio + (this.precio * this.iva) / 100 + this.divisa;
-    }
-}
+// let factura = {
+//     descripcion: "factura de prueba",
+//     precio: 100.0,
+//     iva: 21.0,
+//     divisa: "€",
+//     subTotal: function() {
+//         return this.precio;
+//     },
+//     total: function() {
+//         return this.precio + (this.precio * this.iva) / 100 + this.divisa;
+//     }
+// }
 
-// console.log(factura.total());
+// // console.log(factura.total());
 
-// ---------- CONSTRUCTORES ----------
+// // ---------- CONSTRUCTORES ----------
 
-function Web() {
-    this.url = "http://localhost";
-    this.nombre = "Localhost";
+// function Web() {
+//     this.url = "http://localhost";
+//     this.nombre = "Localhost";
 
-    this.muestraInformacion = function() {
-        return "url: " + this.url + "\n" + "Web: " + this.nombre;
-    }
-}
+//     this.muestraInformacion = function() {
+//         return "url: " + this.url + "\n" + "Web: " + this.nombre;
+//     }
+// }
 
-Web.prototype.visitas = 2;
-Web.prototype.miFuncion = function() {
-    return "Hola";
-}
+// Web.prototype.visitas = 2;
+// Web.prototype.miFuncion = function() {
+//     return "Hola";
+// }
 
-let unaWeb = new Web();
-unaWeb.url = "https://www.amazon.es";
-unaWeb.nombre = "Comprar online";
+// let unaWeb = new Web();
+// unaWeb.url = "https://www.amazon.es";
+// unaWeb.nombre = "Comprar online";
 
 // console.log(unaWeb.miFuncion());
 // console.log(unaWeb);
 // console.log(unaWeb.muestraInformacion());
+
+// const ciudades = [
+//     {
+//         "municipio": "Zaragoza",
+//         "provincia": "Zaragoza"
+//     },
+//     {
+//         "municipio": "Ávila",
+//         "provincia": "Ávila"
+//     },
+//     {
+//         "municipio": "madrid",
+//         "provincia": "madrid"
+//     },
+//     {
+//         "municipio": "Barcelona",
+//         "provincia": "Barcelona"
+//     }
+// ];
+
+// console.log(ciudades);
+
+// ciudades.sort((a, b) => {
+//     return a.municipio.localeCompare(b.municipio);
+// });
+
+// console.log(ciudades);
+
+// const miArray = ["A", "b", "C"];
+// miArray.push("D");
+// miArray[1] = "B";
+// console.log(miArray);
+
+// ---------- DESESTRUCTURACIÓN ----------
+// const numeros = [1, 2, 3];
+
+// const [a, b, c] = numeros;
+
+// console.log(b+c);
+
+// const persona = {
+//     nombre: "Andreu",
+//     edad: 33
+// }
+
+// const {nombre, edad} = persona;
+
+// console.log(nombre);
+
+// const nombre = "Josep";
+// const edad = 33;
+
+// const persona = {
+//     nombre,
+//     edad
+// }
+
+// console.log(persona);
+
+// Template Strings - Plantillas de Cadenas
+// operador de interpolación ${}
+
+// const nombre = "Bob";
+// const edad = 32;
+
+// // PARA QUE FUNCIONE EL OPERADOR DE INTERPOLACIÓN HAY QUE USAR ACENTOS `` EN LUGAR DE COMILLAS
+// const mensaje = `Hola, mi nombre es ${nombre} y tengo ${edad} años.`;
+
+// console.log(mensaje);
+
+// Operador Spread ...
+// const numeros = [1, 2, 3];
+// const nuevosNumeros = [...numeros, 4, 5];
+
+// console.log(nuevosNumeros);
+
+// Parámetros por defecto
+// function saludar(nombre = "Invitado"){
+//     console.log(`Hola, ${nombre}`);
+// }
+// saludar();
+
+// Prámetros rest (rest parameter)
+// function sumar(...numeros) {
+//     let resultado = 0;
+
+//     for(let numero of numeros) {
+//         resultado += numero;
+//     }
+//     console.log(typeof resultado);
+
+//     return resultado;
+// }
+
+// console.log(sumar(5, 4, -1, 8));
+
+// Funciones Flecha () => {}
+
+// function sumar(a, b) {
+//     return a + b;
+// }
+
+// const sumar = (a, b) => a + b;
+
+// Bucle For Each
+// forEach(): Ejecuta una función (nuestra) una vez por cada elemento del array
+// const numeros = [1, 2, 3, 4, 5];
+
+// const multiplica = (n) => {
+//     return n * 2;
+// }
+
+// numeros.forEach((numero) => {
+//     console.log(multiplica(numero));
+// })
+
+// console.log(numeros);
+
+// numeros.forEach((numero) => console.log(numero));
+// numeros.forEach((numero) => {
+//     console.log(numero);
+// })
+
+// map(): Crea un nuevo array con los resultados de 
+// aplicar una función a cada elemento del array.
+
+// const dobleNumero = numeros.map((numero) => {
+//     return multiplica(numero);
+// })
+
+// console.log(dobleNumero);
+
+// filter(): Crea un nuevo array con todos los elementos
+// que cumplan una condición determinada.
+// const numeros = [1, 2, 3, 4, 5];
+
+// const numerosPares = numeros.filter((numero) => {
+//     //return numero % 2 === 0;
+//     return numero > 2;
+// });
+
+// console.log(numerosPares);
+
+// reduce(): Aplica una función a un acumulador y a cada 
+// elemento del array (de izquierda a derecha) para
+// reducirlo a un ÚNICO valor.
+// const numeros = [1, 2, 3, 4, 5];
+
+// const suma = numeros.reduce((acumulador, numero) => {
+//     return acumulador + numero;
+// }, 0);
+
+// console.log(suma);
+
+// find(): Devuelve el PRIMER elemento del array que
+// cumpla una determinada condición.
+// const numeros = [1, 2, 3, 4, 5];
+
+// const numeroEncontrado = numeros.find((numero) => {
+//     return numero < 3;
+// });
+
+// console.log(numeroEncontrado);
+
+// findIndex(): Devuelve el indice del PRIMER elemento
+// del array que cumple con una función de prueba
+// o devolverá -1 si no encuentra nada.
+// const numeros = [1, 2, 3, 4, 5];
+
+// const indiceEncontrado = numeros.findIndex((numero) => {
+//     return numero < 3;
+// });
+
+// console.log(indiceEncontrado);
+
+// some(): Comprueba si al menos un elemento del array
+// cumple una condición determinada y devuelve un valor booleano (true o false).
+// const numeros = [1, 2, 3, 4, 5];
+
+// const tieneNumeroPar = numeros.some((numero) => {
+//     return numero % 2 === 0;
+// });
+
+// console.log(tieneNumeroPar);
+
+// every(): Comprueba si TODOS los elementos del array cumplen
+// una condición y devuelve un valor booleano (true o false)
+const numeros = [1, 2, 3, 4, 5];
+
+// const todosNumerosPares = numeros.every((numero) => {
+//     return numero % 2 === 0;
+// });
+
+const todosNumerosPares = numeros.every((numero) => {
+    if(numero > 3){
+        return numero % 2 === 0;
+    } else {
+        return numero > 8;
+    }
+});
+
+console.log(todosNumerosPares);
