@@ -459,3 +459,15 @@ const todosNumerosPares = numeros.every((numero) => {
 });
 
 console.log(todosNumerosPares);
+
+// MAP
+const mapaNombres = new Map();
+mapaNombres.set("nombre", "Ana");
+mapaNombres.set("edad", 33);
+mapaNombres.set("profesion", "Desarrollador");
+console.log(mapaNombres.get("nombre"));
+console.log(mapaNombres.get("edad"));
+mapaNombres.delete("edad");
+console.log(mapaNombres.has("edad"));
+console.log(mapaNombres.size);
+console.log(mapaNombres);
