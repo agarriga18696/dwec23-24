@@ -444,30 +444,93 @@ for (let i = 0; i < tablaMultiplicar.length; i++) {
 
 // every(): Comprueba si TODOS los elementos del array cumplen
 // una condición y devuelve un valor booleano (true o false)
-const numeros = [1, 2, 3, 4, 5];
+// const numeros = [1, 2, 3, 4, 5];
+
+// // const todosNumerosPares = numeros.every((numero) => {
+// //     return numero % 2 === 0;
+// // });
 
 // const todosNumerosPares = numeros.every((numero) => {
-//     return numero % 2 === 0;
+//     if(numero > 3){
+//         return numero % 2 === 0;
+//     } else {
+//         return numero > 8;
+//     }
 // });
 
-const todosNumerosPares = numeros.every((numero) => {
-    if(numero > 3){
-        return numero % 2 === 0;
-    } else {
-        return numero > 8;
-    }
-});
+// console.log(todosNumerosPares);
 
-console.log(todosNumerosPares);
+// // MAP
+// const mapaNombres = new Map();
+// mapaNombres.set("nombre", "Ana");
+// mapaNombres.set("edad", 33);
+// mapaNombres.set("profesion", "Desarrollador");
+// console.log(mapaNombres.get("nombre"));
+// console.log(mapaNombres.get("edad"));
+// mapaNombres.delete("edad");
+// console.log(mapaNombres.has("edad"));
+// console.log(mapaNombres.size);
+// console.log(mapaNombres);
 
-// MAP
-const mapaNombres = new Map();
-mapaNombres.set("nombre", "Ana");
-mapaNombres.set("edad", 33);
-mapaNombres.set("profesion", "Desarrollador");
-console.log(mapaNombres.get("nombre"));
-console.log(mapaNombres.get("edad"));
-mapaNombres.delete("edad");
-console.log(mapaNombres.has("edad"));
-console.log(mapaNombres.size);
-console.log(mapaNombres);
+
+// COOKIES
+/*
+    Las utilizamos para:
+    - Monitorizar la actividad de los usuarios.
+    - Mantener opciones de visualización o de aspecto para el usuario.
+    - Almacenar variables en el lado cliente.
+    - Identificación o autenticación.
+
+    CREAR UNA COOKIE
+*/
+
+//document.cookie = "usuario=Oreo";
+
+// function crearCookie(usuarioCookie) {
+//     console.log("Creando la cookie...");
+//     usuarioCookie += ";expires=Tue, 7 Nov 2023 12:15:00 GMT";
+//     document.cookie = "usuario=" + encodeURIComponent(usuarioCookie);
+// }
+
+// function leerCookie() {
+//     console.log("Leyendo las cookies...");
+//     console.log(decodeURIComponent(document.cookie));
+// }
+
+/*
+    LOCAL STORAGE
+    
+    setItem(clave, valor);
+
+    getItem(clave);
+*/
+
+function guardaValores() {
+    console.log("Guardando valores en el Local Storage...");
+    let usuariosWeb = {
+        nombre: "Andreu",
+        apellido: "Garriga"
+    };
+    localStorage.setItem("usuarios", JSON.stringify(usuariosWeb));
+}
+
+function leerValores() {
+    console.log("Leyendo valores en el Local Storage...");
+    let valor = JSON.parse(localStorage.getItem("usuarios"));
+    console.log(valor == null ? "La clave no se ha recuperado." : valor);
+}
+
+/*
+    RECURSIVIDAD
+*/
+
+function factorial(numero) {
+
+    if(numero == 0) return 1;
+    
+    return (numero * factorial(numero - 1));
+    
+}
+
+let numero = factorial(5);
+console.log(numero);

@@ -32,15 +32,16 @@
         <!-- main menu -->
         <nav class="main-menu">
           <a href="#articulo_1" class="main-menu__link">Unidad I</a>
-          <a href="#articulo_2" class="main-menu__link">Unidad II</a>
+          <!--<a href="#articulo_2" class="main-menu__link">Unidad II</a>
+          <a href="#articulo_3" class="main-menu__link">Unidad III</a>-->
           <a href="#articulo_3" class="main-menu__link">Unidad III</a>
-          <a href="#articulo_4" class="main-menu__link">Unidad IV</a>
           <!-- theme button -->
           <div class="align-right">
             <input
               type="checkbox"
               class="main-menu__link theme-selector"
               id="theme-btn"
+              title="theme-btn"
             />
             <label for="theme-btn">
               <i class="fa-solid fa-moon dark-theme"></i>
@@ -49,7 +50,7 @@
           </div>
         </nav>
         <!-- responsive menu button -->
-        <input type="checkbox" class="menu-button" id="menu-btn" hidden />
+        <input type="checkbox" class="menu-button" id="menu-btn" title="menu-btn" hidden />
         <label for="menu-btn" class="menu-button__icon">
           <i class="fa-solid fa-bars"></i>
           <i class="fa-solid fa-bars-staggered"></i>
@@ -181,7 +182,7 @@
               </p>
               <!-- details box -->
               <details class="details" open>
-                <summary class="details-title">Prueba JavaScript</summary>
+                <summary class="details-title">Prueba JavaScript &darr;</summary>
                 <div class="details-content">
                   <p>Haz clic en el botón y revisa la consola con F12.</p>
                   <a href="#" onclick="console.log('¡virus pa tu body!');"
@@ -214,15 +215,30 @@
           -->
           <!-- section content -->
           <section class="article-box">
-            <h1 id="articulo_4" class="article-box__title">Unidad IV</h1>
+            <h1 id="articulo_3" class="article-box__title">Unidad III</h1>
             <h4>Arrays y Funciones</h4>
             <article class="article-box__content">
-              <p></p>
+              <h3 class="title_3">Cookies</h3>
+              <p>Se utilizan para:</p>
+              <ol class="ordered_list circle">
+                <li>Monitorizar la actividad de los usuarios.</li>
+                <li>Mantener opciones de visualización o de aspecto para el usuario.</li>
+                <li>Almacenar variables en el lado cliente.</li>
+                <li>Identificación o autenticación.</li>
+              </ol>
               <!-- details box -->
               <details class="details" open>
-                <summary class="details-title">Prueba JavaScript</summary>
+                <summary class="details-title">Prueba JavaScript &darr;</summary>
                 <div class="details-content">
-                  <pre></pre>
+                  <p>Haz clic en el botón y revisa la consola con F12.</p>
+                  <p>Cookies:</p>
+                  <button onclick="crearCookie();" class="button">Crear cookie</button>
+                  <button onclick="leerCookie();" class="button">Leer cookies</button>
+                </div>
+                <div class="details-content">
+                  <p>Local Storage:</p>
+                  <button class="button" onclick="guardaValores();">Guardar Local Storage</button>
+                  <button class="button" onclick="leerValores();">Leer Local Storage</button>
                 </div>
               </details>
             </article>

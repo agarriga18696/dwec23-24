@@ -10,8 +10,9 @@ let promptText = "Elija cualquier número de cuatro dígitos ";
 promptText += "que esté formado por al menos dos dígitos "; 
 promptText += "diferentes, incluido el cero.";
 // Lanzamos el prompt.
-// numero = prompt(promptText);
-numero = "1234";
+numero = prompt(promptText);
+//numero = "1234";
+
 if(!validaNumero(numero)) {
     console.log("El número introducido no es válido.");
 } else {
