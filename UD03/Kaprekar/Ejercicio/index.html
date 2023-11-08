@@ -9,28 +9,22 @@
 <body>
 
     <main>
-        <section>
-            <article class="article">
+        <div class="card">
+            <div class="card__header">
+                <h6>Pregunta</h6>
+                <p id="questioProposada"></p>
+            </div>
 
-                <div class="article__header">
-                    <p id="questioProposada"></p>
-                </div>
+            <div class="card__content">
+                <div id="missatge"></div>
+            </div>
 
-                <div class="botones">
-                    <button class="btn" id="btnEsquerre"></button>
-                    <button class="btn" id="btnDret"></button>
-                </div>
-
-                <div class="article__mid_content">
-                    <div id="missatge"></div>
-                </div>
-                
-                <div class="article__footer">
-                    <button class="btn" id="btnReiniciar">Reiniciar</button>
-                </div>
-
-            </article>
-        </section>
+            <div class="card__footer">
+                <button class="btn" id="btnEsquerre"></button>
+                <button class="btn" id="btnDret"></button>
+                <button class="btn" id="btnReiniciar">Reiniciar</button>
+            </div>
+        </div>
     </main>
 
     <script src="script.js" type="text/javascript"></script>

@@ -1,14 +1,19 @@
 //creamos array de objetos
 const questions = [
     {
-        questio: "Quin pais té més població?",
-        respostaCorrecta: "La Xina",
-        respostaIncorrecta: "La India",
+        questio: "Quin país té més població?",
+        respostaCorrecta: "La India",
+        respostaIncorrecta: "La Xina",
     },
     {
         questio: "El primer astronàuta a trepitjar la lluna va ser?",
         respostaCorrecta: "Neil Armstrong",
         respostaIncorrecta: "Louis Armstrong",
+    },
+    {
+        questio: "CSS és un llenguatge de programació?",
+        respostaCorrecta: "Ni de broma",
+        respostaIncorrecta: "Clar que sí",
     }
 ]; // aqui va ; ya que acaba el array
 //variables necesarias
