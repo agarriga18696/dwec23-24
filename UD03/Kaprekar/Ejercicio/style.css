@@ -1,10 +1,12 @@
-:root {
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
+
+:root {
     /* VARIABLES */
     --color-primario: hsl(144, 20%, 53%);
     --color-secundario: hsl(0, 0%, 90%);
     --color-texto: hsl(0, 0%, 22%);
+    --fuente: 'Josefin Sans', sans-serif;
 }
 
 * {
@@ -39,12 +41,14 @@ main {
     border-radius: .6rem;
     padding: 2rem;
     background-color: var(--color-secundario);
+    box-shadow: 0rem 0rem 5rem rgba(0, 0, 0, .1);
 }
 
 .card__header, .card__content, .card__footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--fuente);
 }
 
 .card__header {
@@ -81,7 +85,8 @@ main {
     height: calc(100% / 2);
     border-radius: .6rem;
     border: .1rem solid rgba(0, 0, 0, .1);
-    font-size: 1.3em;
+    font-family: var(--fuente);
+    font-size: 1.5em;
     color: var(--color-texto);
     cursor: pointer;
     transition: all .2s ease-in-out;
